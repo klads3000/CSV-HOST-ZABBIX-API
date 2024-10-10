@@ -17,6 +17,7 @@ Antes de executar o script, você deve ajustar as seguintes configurações:
 2. **Credenciais**: Insira suas credenciais de autenticação (usuário e senha) nas variáveis `username` e `password`.
 3. **Template e Grupo**: Ajuste os IDs do template e do grupo no script (`template_id` e `group_id`). (ESSAS INFORMAÇÕES ESTÃO NA URL DO TEMPLATE OU DO GRUPO)
 4. **Arquivo CSV**: Altere o caminho do arquivo CSV para o que contém os dados dos hosts a serem criados.
+5. **#'proxy_hostid':** 'ID ZBX PROXY' CASO SEJA NECESSARIO ZABBIX_PROXY(A informação do ID está na URL do zabbix-proxy no zabbix)
 
 ### Estrutura do CSV
 
