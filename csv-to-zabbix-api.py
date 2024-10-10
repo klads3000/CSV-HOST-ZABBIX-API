@@ -68,7 +68,7 @@ def create_hosts_from_csv(csv_file, template_id, group_id, auth_token):
                     'groups': [{'groupid': group_id}],
                     'templates': [{'templateid': template_id}],
                     'inventory_mode': 0,
-                    'proxy_hostid': '13297'
+                    #'proxy_hostid': '13297' CASO SEJA NECESSARIO ZABBIX_PROXY(A informação do ID está na URL do zabbix-proxy no zabbix)
                 }
                 response = call_zabbix_api('host.create', params, auth_token)
                 print(f"Host '{hostname}' criado com sucesso:")
@@ -81,8 +81,8 @@ auth_token = zabbix_login(username, password)
 if auth_token:
     try:
         # Exemplo: ID do template e grupo
-        template_id = '11410'  # ID do template SNMP Genérico
-        group_id = '28'  # ID do grupo ao qual o host pertencerá
+        template_id = 'xxx'  # ID do template SNMP Genérico
+        group_id = 'xxx'  # ID do grupo ao qual o host pertencerá
 
         # Caminho para o arquivo CSV
         csv_file = 'ARQUIVOCOMHOSTS.csv'
